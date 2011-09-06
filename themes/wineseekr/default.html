@@ -1,0 +1,104 @@
+<html>
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title><dz:title></title>
+    <meta name="keywords" content="<dz:keywords>" /> 
+    <meta name="description" content="<dz:description>" />     
+    <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+    <link href="<dz:theme_uri>/css/style.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        sdiv.header { background: url("<dz:theme_uri>/images/main_bg_thin.png") no-repeat 100% 0px; }
+        div.main_menu { background: url("<dz:theme_uri>/images/menu_bg1.png"); }
+        span.site-header-text { 
+            font-family: Pacifico; 
+            font-size: 30px;
+        }
+    </style>        
+    <style type="text/css">
+        <dz:css>
+    </style>
+    <link href="<dz:uri>/static/jquery/css/smoothness/jquery-ui-1.8.8.custom.css" rel="stylesheet" type="text/css" />	
+    <script type="text/javascript" src="<dz:uri>/static/jquery/js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="<dz:uri>/static/jquery/js/jquery-ui-1.8.8.custom.min.js"></script>
+    <script type="text/javascript">
+        <dz:js>
+    </script>
+</head>
+<body>
+    <div class=wrapper>
+        <div class=top>
+            <div class=header>
+                <div class=container>
+                    <div class=pad>
+                        <div class=header_left>
+                            <p><span class=site-header-text><a href="/"><dz:site_name></a></span></p>
+                        </div>                        
+                        <div class=header_right>
+                            <span class=user_info>(<dz:login_id>)</span>
+                            <div class=system_menu>
+                                <dz:system_menu>
+                            </div>
+                        </div>         
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=main_menu>
+            <div class=container>
+                <div class=hpad>
+                    <dz:main_menu>
+                </div>                    
+            </div>
+        </div>                
+
+            
+        <div class=app_menu>
+            <div class=container>
+                <div class=hpad>
+                    <dz:app_menu>
+                </div>                    
+            </div>                    
+        </div>
+        
+        <div class=container>
+            <div class=content>
+                <div class=pad>
+                    <div id="printed_output"><pre><dz:printed_output></pre></div>
+                    <div class="messages"><dz:messages></div>
+                    <div class="warnings"><dz:warnings></div>
+                    <div class="errors"><dz:errors></div>
+                    <dz:content>
+                </div>                    
+            </div>
+
+        </div>
+
+        <div class=push></div>
+    </div>
+    <div class=bottom>
+        <div class=container>
+            <div class=footer>
+                <div class=hpad>
+                    <div class=footer_left>
+                      <ul>
+                          <li><dz:link_to "privacy policy" "/privacy.html"></li>
+                          <li><dz:link_to "terms of use" "/terms.html"></li>
+                          <li><dz:link_to "contact us" "/contact.html"></li>
+                      </ul>
+                    </div>
+                    <div class=footer_right>
+            		  <a href="http://www.dynamic-solutions.com">a dynamic solution</a>
+                    </div>
+                </div>            
+            </div>    
+        </div>
+    </div>    
+    <div>    
+        <div class="debug"><dz:debug></div>
+        <dz:tracker> 
+    </div>        
+    <div style="position:absolute;bottom:16;right:20;color:#800;">Z</div>
+</body>
+</html>
+
